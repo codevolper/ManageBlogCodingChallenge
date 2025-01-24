@@ -25,32 +25,33 @@ The application uses a DataSet to store blog posts and their associated comments
 ```
 
 * 2 - Restore dependencies
-  ```
-    dotnet restore
-  ```
-* 3 - Build the project:
-  ```
-  dotnet build
-  ```
-
-  * 4 - Run the application:
-  ```
-  dotnet run --project ManageBlogServiceAPI.sln
-  ```
-
-  # API Endpoints
-  ## Create a Blog Post
+```
+  dotnet restore
+```
   
-  - #### URL: POST /api/posts
-  - #### Request Body:
-  ```  
-  {
-    "id": 1,
-    "title": "First Blog Post",
-    "content": "This is the content of the first blog post."
-  }
+* 3 - Build the project:
+```
+dotnet build
+```
 
-  ```
+* 4 - Run the application:
+```
+dotnet run --project ManageBlogServiceAPI.sln
+```
+
+ # API Endpoints
+## Create a Blog Post
+  
+- #### URL: POST /api/posts
+- #### Request Body:
+```  
+{
+  "id": 1,
+  "title": "First Blog Post",
+  "content": "This is the content of the first blog post."
+}
+
+```
   
 ## Add a Comment to a Blog Post
 #### URL: POST /api/posts/{id}/comments
@@ -66,7 +67,7 @@ The application uses a DataSet to store blog posts and their associated comments
 ## Get all posts
 #### URL: GET /api/posts
 
-##Get a post by Id 
+## Get a post by Id 
 #### URL: GET /api/posts/{id}
 
 # Project Structure
